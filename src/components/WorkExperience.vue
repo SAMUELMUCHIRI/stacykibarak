@@ -27,7 +27,7 @@
                                 ><img
                                     class="aspect-square h-full w-full object-contain"
                                     alt="Computer Market Hub"
-                                    src="./Samiksha Shukla_files/cmhlogo.jpeg"
+                                    src=""
                             /></span>
                         </div>
                         <div class="flex-grow ml-4 items-center flex-col group">
@@ -98,7 +98,7 @@
                                 ><img
                                     class="aspect-square h-full w-full object-contain"
                                     alt="Munshot"
-                                    src="./Samiksha Shukla_files/munshotlogo.png"
+                                    src=""
                             /></span>
                         </div>
                         <div class="flex-grow ml-4 items-center flex-col group">

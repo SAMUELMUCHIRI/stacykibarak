@@ -26,7 +26,7 @@
                                 ><img
                                     class="aspect-square h-full w-full object-contain"
                                     alt="Baderia Global Institute of Engineering and Management"
-                                    src="./Samiksha Shukla_files/RGPVLOGO.jpeg"
+                                    src=""
                             /></span>
                         </div>
                         <div class="flex-grow ml-4 items-center flex-col group">

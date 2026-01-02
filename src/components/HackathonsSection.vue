@@ -55,7 +55,7 @@
                                     ><img
                                         class="aspect-square h-full w-full object-contain"
                                         alt="Smart India Hackathon (SIH)"
-                                        src="./Samiksha Shukla_files/SIH2.webp"
+                                        src=""
                                 /></span>
                             </div>
                             <div
@@ -98,7 +98,7 @@
                                     ><img
                                         class="aspect-square h-full w-full object-contain"
                                         alt="Hack JKLU"
-                                        src="./Samiksha Shukla_files/jklulogo.jpg"
+                                        src=""
                                 /></span>
                             </div>
                             <div
