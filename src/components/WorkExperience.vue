@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import {ref , computed} from 'vue';
-import Skills from "@/components/SkillsSection.vue";
+
 const experiences = [
     {
         id: 1,
@@ -137,14 +137,17 @@ const experiences = [
         ],
     },
 ];
-const allskills = ref<string[]>([]);
+
 const skills = computed(() => {
-    experiences.forEach((experience) => {
-        allskills.value.push(...experience.skills);
-    });
-    return Array.from(new Set(allskills.value));
+  const allSkills: string[] = [];
+  experiences.forEach((exp) => {
+    allSkills.push(...exp.skills);
+  });
+  return Array.from(new Set(allSkills));
 });
 
+
+import SkillsSection from "@/components/SkillsSection.vue";
 
 
 import { Badge } from "@/components/ui/badge";
@@ -157,8 +160,8 @@ function func_variant(vartype : string) : "default" | "secondary" | "destructive
 }
 </script>
 <template>
-    <section id="work">
-        <div class="flex min-h-0 flex-col gap-y-3 p-4">
+    <section id="work"  class="flex min-h-0 flex-col gap-y-3 p-4">
+
             <div
                 style="
                     opacity: 1;
@@ -209,7 +212,7 @@ function func_variant(vartype : string) : "default" | "secondary" | "destructive
                     </div>
                 </div>
             </div>
-        </div>
+
     </section>
-    <Skills :skills="skills" />
-</template>
+    <SkillsSection :skills_part="skills"/>
+  </template>
