@@ -9,7 +9,7 @@ import ProjectSection from "@/components/ProjectSection.vue";
 import WorkExperience from "@/components/WorkExperience.vue";
 import Hero from "@/components/HeroSection.vue";
 import About from "@/components/AboutSection.vue";
-import Skills from "@/components/SkillsSection.vue";
+
 import Hackathons from "@/components/HackathonsSection.vue";
 import Education from "@/components/EducationSection.vue";
 import Contact from "@/components/ContactSection.vue";
@@ -18,16 +18,18 @@ import Background from "./components/Background.vue";
 </script>
 
 <template>
-    <Background />
-    <main class="flex flex-col min-h-dvh space-y-10 bg-inherit">
-        <Hero />
-        <About />
-        <WorkExperience />
-        <Skills />
-        <ProjectSection />
-        <Education />
-        <Hackathons />
-        <Contact />
-    </main>
-    <FloatingButton />
+    <div class="min-h-screen font-sans antialiased w-dvw container mx-auto">
+        <Background />
+        <main class="flex flex-col min-h-dvh space-y-10">
+            <Hero />
+            <About />
+            <WorkExperience />
+
+            <ProjectSection />
+            <Education />
+            <Hackathons />
+            <Contact />
+        </main>
+        <FloatingButton />
+    </div>
 </template>
