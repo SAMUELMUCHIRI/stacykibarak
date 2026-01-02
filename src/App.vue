@@ -1,47 +1,33 @@
-<script setup>
-import HelloWorld from './components/HelloWorld.vue'
-import TheWelcome from './components/TheWelcome.vue'
+<script lang="ts">
+export const iframeHeight = "800px";
+export const description =
+    "A simple sidebar with navigation grouped by section.";
+</script>
+
+<script setup lang="ts">
+import ProjectSection from "@/components/ProjectSection.vue";
+import WorkExperience from "@/components/WorkExperience.vue";
+import Hero from "@/components/HeroSection.vue";
+import About from "@/components/AboutSection.vue";
+import Skills from "@/components/SkillsSection.vue";
+import Hackathons from "@/components/HackathonsSection.vue";
+import Education from "@/components/EducationSection.vue";
+import Contact from "@/components/ContactSection.vue";
+import FloatingButton from "@/components/FloatingButton.vue";
+import Background from "./components/Background.vue";
 </script>
 
 <template>
-  <header>
-    <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" />
-
-    <div class="wrapper">
-      <HelloWorld msg="You did it!" />
-    </div>
-  </header>
-
-  <main>
-    <TheWelcome />
-  </main>
+    <Background />
+    <main class="flex flex-col min-h-dvh space-y-10 bg-inherit">
+        <Hero />
+        <About />
+        <WorkExperience />
+        <Skills />
+        <ProjectSection />
+        <Education />
+        <Hackathons />
+        <Contact />
+    </main>
+    <FloatingButton />
 </template>
-
-<style scoped>
-header {
-  line-height: 1.5;
-}
-
-.logo {
-  display: block;
-  margin: 0 auto 2rem;
-}
-
-@media (min-width: 1024px) {
-  header {
-    display: flex;
-    place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
-  }
-
-  .logo {
-    margin: 0 2rem 0 0;
-  }
-
-  header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
-  }
-}
-</style>
