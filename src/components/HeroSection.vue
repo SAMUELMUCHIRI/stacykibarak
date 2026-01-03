@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import profile from "@/assets/stacykibarak.jpeg";
+import profile from "@/assets/stacykibarak.webp";
 </script>
 <template>
     <section id="hero">
