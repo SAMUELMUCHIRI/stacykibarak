@@ -1,15 +1,16 @@
 <template>
-    <section id="about" class="p-4">
-        <div style="opacity: 1; filter: blur(0px); transform: translateY(-6px)">
-            <h2 class="text-2xl font-bold">About</h2>
+    <section id="about" class="p-4 flex flex-col gap-4">
+        <div>
+            <h2 class="text-2xl font-bold">/ About</h2>
         </div>
-        <div style="opacity: 1; filter: blur(0px); transform: translateY(-6px)">
+        <div>
             <div
-                class="prose max-w-full text-pretty font-sans text-sm text-muted-foreground dark:prose-invert flex flex-col gap-4 backdrop-blur-2xl"
+                class="text-md prose max-w-full text-pretty font-sans text-muted-foreground dark:prose-invert flex flex-col gap-4 backdrop-blur-lg p-4 rounded-xl dark:shadow-xl dark:shadow-white/10 shadow-xl shadow-gray-500/10"
             >
-                <span class="inline-block md:text-xl text-muted-foreground"
+                <span class="inline-block"
                     >I am an
-                    <span class="font-bold"
+                    <span
+                        class="underline dark:decoration-white decoration-1 decoration-black underline-offset-4"
                         >Electronics and Computer Engineer</span
                     >
                     who is passionate about blending tech with electronics. I am
@@ -17,10 +18,10 @@
                     have done several embedded systems projects on the
                     same.</span
                 >
-                <span class="inline-block md:text-xl text-muted-foreground"
+                <span class=""
                     >I also enjoy
                     <span
-                        class="underline decoration-dotted dark:decoration-white decoration-4 decoration-black underline-offset-2"
+                        class="underline dark:decoration-white decoration-1 decoration-black underline-offset-4"
                         >mentorship as a learning activity</span
                     >
                     as I was mentored and as I also mentor younger people in the

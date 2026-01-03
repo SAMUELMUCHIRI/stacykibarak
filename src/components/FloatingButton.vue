@@ -27,7 +27,7 @@ const mode = useColorMode();
                 <a
                     class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 hover:bg-accent hover:text-accent-foreground rounded-full size-12"
                     data-state="closed"
-                    href="https://www.samiksha.online/"
+                    href="https://stacykibarak.vercel.app/"
                     ><svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="24"
@@ -63,7 +63,7 @@ const mode = useColorMode();
                 <a
                     class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 hover:bg-accent hover:text-accent-foreground rounded-full size-12"
                     data-state="closed"
-                    href="https://github.com/samiksha0shukla"
+                    href="https://github.com/Stacy2021"
                     ><svg viewBox="0 0 438.549 438.549" class="size-4">
                         <path
                             fill="currentColor"
@@ -78,7 +78,7 @@ const mode = useColorMode();
                 <a
                     class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 hover:bg-accent hover:text-accent-foreground rounded-full size-12"
                     data-state="closed"
-                    href="https://www.linkedin.com/in/samiksha-shukla-7b2207217/"
+                    href="https://www.linkedin.com/in/stacykibarak/"
                     ><svg
                         viewBox="0 0 24 24"
                         xmlns="http://www.w3.org/2000/svg"
@@ -91,26 +91,7 @@ const mode = useColorMode();
                         ></path></svg
                 ></a>
             </div>
-            <div
-                class="flex aspect-square cursor-pointer items-center justify-center rounded-full"
-                style="width: 40px"
-            >
-                <a
-                    class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 hover:bg-accent hover:text-accent-foreground rounded-full size-12"
-                    data-state="closed"
-                    href="https://x.com/Samiksha2908"
-                    ><svg
-                        viewBox="0 0 24 24"
-                        xmlns="http://www.w3.org/2000/svg"
-                        class="size-4"
-                    >
-                        <title>X</title>
-                        <path
-                            fill="currentColor"
-                            d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z"
-                        ></path></svg
-                ></a>
-            </div>
+
             <div
                 data-orientation="vertical"
                 role="none"

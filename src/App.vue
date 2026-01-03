@@ -20,14 +20,13 @@ import Background from "./components/Background.vue";
 <template>
     <div class="min-h-screen font-sans antialiased w-dvw container mx-auto">
         <Background />
-        <main class="flex flex-col min-h-dvh space-y-10">
+        <main class="flex flex-col min-h-dvh overflow-auto space-y-10">
             <Hero />
             <About />
             <WorkExperience />
 
-            <ProjectSection />
             <Education />
-            <Hackathons />
+
             <Contact />
         </main>
         <FloatingButton />

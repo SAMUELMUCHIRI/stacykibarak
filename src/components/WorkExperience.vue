@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import {ref , computed} from 'vue';
+import { computed } from "vue";
 
 const experiences = [
     {
@@ -139,54 +139,49 @@ const experiences = [
 ];
 
 const skills = computed(() => {
-  const allSkills: string[] = [];
-  experiences.forEach((exp) => {
-    allSkills.push(...exp.skills);
-  });
-  return Array.from(new Set(allSkills));
+    const allSkills: string[] = [];
+    experiences.forEach((exp) => {
+        allSkills.push(...exp.skills);
+    });
+    return Array.from(new Set(allSkills));
 });
-
 
 import SkillsSection from "@/components/SkillsSection.vue";
 
-
 import { Badge } from "@/components/ui/badge";
 
-
-function func_variant(vartype : string) : "default" | "secondary" | "destructive" | "outline" | null | undefined {
-  if (vartype === 'Internship') return 'outline'
-   if (vartype === 'Part-time') return 'secondary'
-   return 'default'
+function func_variant(
+    vartype: string,
+): "default" | "secondary" | "destructive" | "outline" | null | undefined {
+    if (vartype === "Internship") return "outline";
+    if (vartype === "Part-time") return "secondary";
+    return "default";
 }
 </script>
 <template>
-    <section id="work"  class="flex min-h-0 flex-col gap-y-3 p-4">
+    <section id="work" class="flex min-h-0 flex-col gap-4 p-4">
+        <div style="opacity: 1; filter: blur(0px); transform: translateY(-6px)">
+            <h2 class="text-2xl font-bold">/ Work Experience</h2>
+        </div>
 
-            <div
-                style="
-                    opacity: 1;
-                    filter: blur(0px);
-                    transform: translateY(-6px);
-                "
-            >
-                <h2 class="text-2xl font-bold">Work Experience</h2>
-            </div>
-
-            <div
-                class="flex-grow items-center flex-col group backdrop-blur-lg  p-2 rounded-xl dark:shadow-xl dark:shadow-white/10  shadow-xl shadow-gray-500/10"
-                v-for="experience in experiences"
-                :key="experience.id"
-            >
+        <div
+            class="flex-grow items-center flex-col group backdrop-blur-lg p-4 rounded-xl dark:shadow-xl dark:shadow-white/10 shadow-xl shadow-gray-500/10"
+            v-for="experience in experiences"
+            :key="experience.id"
+        >
+            <div class="flex gap-4 flex-col">
                 <div class="flex flex-col">
                     <div
-                        class="flex items-center justify-between gap-x-2 text-base py-4 "
+                        class="flex items-center justify-between gap-x-2 text-base py-4"
                     >
                         <h3
                             class="inline-flex items-center justify-center font-semibold leading-none text-xs sm:text-sm gap-4"
                         >
-                            <span class="font-bold text-xl">{{ experience.company }}</span><Badge
+                            <span class="font-bold text-xl">{{
+                                experience.company
+                            }}</span
+                            ><Badge
                                 :variant="func_variant(experience.type)"
-
                                 class="hidden md:block"
                                 >{{ experience.type }}</Badge
                             ><span class="inline-flex gap-x-1"></span>
@@ -202,17 +197,22 @@ function func_variant(vartype : string) : "default" | "secondary" | "destructive
                         {{ experience.role }}
                     </p>
                 </div>
-                <div class="mt-2 ">
-                    <div v-if="experience.description.length > 0">
-                        <p class="font-sans text-sm">
-                        <div v-for="item in experience.description">
-                          {{ item }}
+
+                <div v-if="experience.description.length > 0">
+                    <div
+                        class="font-sans text-sm border-t-2"
+                        v-if="experience.description.length > 0"
+                    >
+                        <div
+                            v-for="item in experience.description"
+                            class="p-2 flex items-center"
+                        >
+                            <span>{{ item }}</span>
                         </div>
-                        </p>
                     </div>
                 </div>
             </div>
-
+        </div>
     </section>
-    <SkillsSection :skills_part="skills"/>
-  </template>
+    <SkillsSection :skills_part="skills" />
+</template>
