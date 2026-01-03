@@ -75,7 +75,7 @@ import profile from "@/assets/stacykibarak.webp";
                     :src="profile"
                     alt="Hero Image"
                     class="size-2/3 object-cover rounded-xl shadow-2xl dark:shadow-gray-600 shadow-gray-900"
-                    loading="lazy"
+                    fetchpriority="high"
                 />
             </div>
         </div>

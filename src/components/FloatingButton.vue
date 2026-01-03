@@ -28,6 +28,7 @@ const mode = useColorMode();
                     class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 hover:bg-accent hover:text-accent-foreground rounded-full size-12"
                     data-state="closed"
                     href="https://stacykibarak.vercel.app/"
+                    aria-label="Visit Stacy Kibarak's website"
                     ><svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="24"
@@ -64,6 +65,7 @@ const mode = useColorMode();
                     class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 hover:bg-accent hover:text-accent-foreground rounded-full size-12"
                     data-state="closed"
                     href="https://github.com/Stacy2021"
+                    aria-label="Visit Stacy Kibarak's Github Portfolio"
                     ><svg viewBox="0 0 438.549 438.549" class="size-4">
                         <path
                             fill="currentColor"
@@ -79,6 +81,7 @@ const mode = useColorMode();
                     class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 hover:bg-accent hover:text-accent-foreground rounded-full size-12"
                     data-state="closed"
                     href="https://www.linkedin.com/in/stacykibarak/"
+                    aria-label="Visit Stacy Kibarak's LinkediN"
                     ><svg
                         viewBox="0 0 24 24"
                         xmlns="http://www.w3.org/2000/svg"
