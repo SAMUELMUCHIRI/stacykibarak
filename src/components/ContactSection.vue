@@ -4,11 +4,9 @@
         class="h-svh w-full flex flex-col items-center justify-center"
     >
         <div
-            class="bg-gradient-to-r from-gray-200 to-slate-300 dark:from-[#1B1B1B] dark:to-indigo-950 p-4 rounded-3xl h-2/3 w-full flex flex-col items-center justify-center gap-4"
+            class="bg-gradient-to-r from-gray-200 to-slate-300 dark:from-[#1B1B1B] dark:to-indigo-950 p-4 rounded-3xl h-2/3 w-full flex flex-col items-center justify-center gap-10"
         >
-            <div
-                class="p-8 rounded-full inset-shadow-sm dark:inset-shadow-white/25 inset-shadow-gray-900"
-            >
+            <div class="">
                 <svg
                     class="md:w-40 md:h-40 h-20 w-20"
                     fill="currentColor"
@@ -58,11 +56,27 @@
             <h2 class="md:text-5xl font-bold text-xl">
                 Tell me about your next project
             </h2>
-            <p
-                class="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed"
+            <a
+                href="mailto:stacykibarak@gmail.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="md:text-xl text-white dark:text-black rounded-2xl bg-black dark:bg-white/90 w-max px-4 py-2 flex gap-2 items-center"
+                ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="size-6"
+                >
+                    <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75"
+                    />
+                </svg>
+                <span>Email Me</span></a
             >
-                Want to chat? Just shoot me a dm<!-- -->
-            </p>
         </div>
     </section>
 </template>
